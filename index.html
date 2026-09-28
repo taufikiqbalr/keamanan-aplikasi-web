@@ -3,146 +3,175 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portal perkuliahan TI215 Keamanan Aplikasi Web ITTS — jadwal, materi, tugas, kuis, UTS, UAS, dan proyek." />
-  <meta name="theme-color" content="#0b3b53" />
+  <meta name="description" content="Portal perkuliahan TI215 Keamanan Aplikasi Web ITTS — jadwal, materi, hands-on, tugas, kuis, UTS, UAS, dan proyek." />
+  <meta name="theme-color" content="#081c2b" />
   <title>TI215 — Keamanan Aplikasi Web</title>
   <link rel="stylesheet" href="/styles.css" />
   <script src="/app.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Lewati ke konten utama</a>
+
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="#top" aria-label="TI215 Home">
-        <span class="brand-mark">TI</span>
-        <span><strong>TI215</strong><small>Keamanan Aplikasi Web</small></span>
+        <span class="brand-mark">🛡</span>
+        <span><strong>TI215</strong><small>Web App Security</small></span>
       </a>
-      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="siteNav">Menu</button>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="siteNav">☰</button>
       <nav id="siteNav" class="site-nav" aria-label="Navigasi utama">
         <a href="#course">Course</a>
         <a href="#schedule">Schedule</a>
         <a href="#materials">Materials</a>
         <a href="#assessment">Tasks & Quiz</a>
-        <a href="#project">Project</a>
-        <a href="#references">References</a>
+        <a href="#project">Final Project</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
     <section class="hero" id="top">
+      <div class="hero-orb hero-orb-one"></div>
+      <div class="hero-orb hero-orb-two"></div>
       <div class="container hero-grid">
-        <div>
-          <span class="eyebrow">Program Studi Teknologi Informasi · ITTS</span>
-          <h1>Keamanan Aplikasi Web</h1>
-          <p class="hero-subtitle">Course portal untuk kelas reguler TI215 — materi, hands-on, tugas, kuis, ujian, dan proyek integratif dalam satu tempat.</p>
+        <div class="hero-copy">
+          <div class="hero-labels"><span>ITTS · Teknologi Informasi</span><span class="live-dot">● Ganjil 2026/2027</span></div>
+          <h1>Keamanan<br><span>Aplikasi Web</span></h1>
+          <p class="hero-subtitle">Belajar mikir seperti attacker, membangun seperti defender, dan menguji secara etis — dari browser security sampai AI/ML threat detection.</p>
           <div class="class-strip" aria-label="Jadwal kelas">
-            <span>Rabu</span><span>09:45–12:00 WIB</span><span>Lab 2</span>
+            <span>📅 Rabu</span><span>⏰ 09:45–12:00 WIB</span><span>📍 Lab 2</span><span>🎓 3 SKS</span>
           </div>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#schedule">Lihat class schedule</a>
-            <a class="btn btn-secondary" href="#assessment">Lihat tugas & kuis</a>
+            <a class="btn btn-primary" href="#schedule">Explore semester ↓</a>
+            <a class="btn btn-glass" href="#assessment">Cek deadline zone</a>
           </div>
         </div>
-        <aside class="hero-card" aria-label="Ringkasan mata kuliah">
-          <p class="card-kicker">Course Snapshot</p>
-          <div class="snapshot-row"><span>Kode</span><strong>TI215</strong></div>
-          <div class="snapshot-row"><span>Semester</span><strong>3</strong></div>
-          <div class="snapshot-row"><span>SKS</span><strong>3 (2T + 1P)</strong></div>
-          <div class="snapshot-row"><span>Kelas</span><strong>Reguler</strong></div>
-          <div class="snapshot-row"><span>TA</span><strong>Ganjil 2026/2027</strong></div>
-          <div class="snapshot-row"><span>Pengampu</span><strong>Taufik Iqbal Ramdhani, S.Kom., M.Sc.</strong></div>
+
+        <aside class="hero-console" aria-label="Ringkasan kelas">
+          <div class="console-top"><div><i></i><i></i><i></i></div><span>ti215://course-dashboard</span></div>
+          <div class="console-body">
+            <div class="console-title"><span>COURSE MODE</span><strong>Build → Break → Fix → Scale</strong></div>
+            <div class="hero-metrics">
+              <div><strong>16</strong><span>weeks</span></div>
+              <div><strong>3</strong><span>quizzes</span></div>
+              <div><strong>3</strong><span>labs graded</span></div>
+              <div><strong>1</strong><span>capstone</span></div>
+            </div>
+            <div class="console-path">
+              <span class="path-chip c1">FOUNDATION</span>
+              <b>→</b><span class="path-chip c2">SECURE BUILD</span>
+              <b>→</b><span class="path-chip c3">SECURITY OPS</span>
+              <b>→</b><span class="path-chip c4">INTELLIGENT DEFENSE</span>
+            </div>
+            <div class="console-alert">
+              <span>⚠</span>
+              <div><strong>Ethical testing only</strong><small>Lab / own system / explicit permission.</small></div>
+            </div>
+          </div>
         </aside>
       </div>
     </section>
 
-    <section class="notice-band">
-      <div class="container notice-grid">
-        <div><strong>Security Rule</strong><span>Pengujian hanya pada lab, sistem milik sendiri, atau target yang memiliki izin eksplisit.</span></div>
-        <div><strong>UAS Video</strong><span>Video penjelasan + demo proyek 10–15 menit wajib dikumpulkan.</span></div>
+    <section class="pulse-strip">
+      <div class="container pulse-grid">
+        <div><span class="pulse-icon">🧪</span><div><strong>Hands-on first</strong><small>Teori langsung diuji di lab</small></div></div>
+        <div><span class="pulse-icon">🧠</span><div><strong>Think like attacker</strong><small>Tanpa kehilangan mindset defender</small></div></div>
+        <div><span class="pulse-icon">🎥</span><div><strong>UAS = build + demo</strong><small>Video 10–15 menit wajib</small></div></div>
       </div>
     </section>
 
     <section class="section" id="course">
       <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow">Course</span>
-          <h2>Arah pembelajaran</h2>
-          <p>Dari fondasi keamanan web, implementasi kontrol keamanan, hingga integrasi cloud, Zero Trust, big data, AI/ML, dan adaptive security.</p>
+        <div class="section-heading split-heading">
+          <div><span class="eyebrow">01 · Course map</span><h2>What you’ll unlock</h2></div>
+          <p>Tiga CPMK menjadi jalur utama: update mindset, implement controls, lalu integrasikan cloud, Zero Trust, big data, dan AI/ML.</p>
         </div>
         <div class="outcomes-grid" id="outcomesGrid"></div>
         <div class="assessment-summary" id="assessmentSummary"></div>
       </div>
     </section>
 
-    <section class="section section-alt" id="schedule">
+    <section class="section section-dark" id="schedule">
       <div class="container">
-        <div class="section-heading row-heading">
-          <div>
-            <span class="eyebrow">Class Schedule</span>
-            <h2>Rencana 16 minggu</h2>
-            <p>Tanggal mengikuti kalender akademik. Pertemuan reguler dilaksanakan setiap Rabu, 09:45–12:00 WIB di Lab 2.</p>
-          </div>
+        <div class="section-heading split-heading schedule-heading">
+          <div><span class="eyebrow eyebrow-light">02 · Semester journey</span><h2>Schedule yang gampang di-scan</h2></div>
+          <p>Lihat semester sebagai roadmap dulu, lalu buka minggu yang kamu butuhkan. Warna menunjukkan fase pembelajaran.</p>
+        </div>
+
+        <div class="semester-roadmap" id="semesterRoadmap" aria-label="Semester roadmap"></div>
+
+        <div class="schedule-toolbar">
           <div class="filter-group" aria-label="Filter jadwal">
-            <button class="filter-btn active" data-filter="all" type="button">Semua</button>
-            <button class="filter-btn" data-filter="assessment" type="button">Ada asesmen</button>
-            <button class="filter-btn" data-filter="project" type="button">Project phase</button>
+            <button class="filter-btn active" data-filter="all" type="button">All weeks</button>
+            <button class="filter-btn" data-filter="assessment" type="button">⚡ Assessment</button>
+            <button class="filter-btn" data-filter="project" type="button">🚀 Project phase</button>
+          </div>
+          <div class="view-switch" aria-label="Mode tampilan jadwal">
+            <button class="view-btn active" data-view="compact" type="button">▦ Cards</button>
+            <button class="view-btn" data-view="list" type="button">☰ List</button>
           </div>
         </div>
-        <div class="schedule-list" id="scheduleList"></div>
+
+        <div class="schedule-list compact" id="scheduleList"></div>
       </div>
     </section>
 
     <section class="section" id="materials">
       <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow">Materials</span>
-          <h2>Materi & aktivitas kelas</h2>
-          <p>Setiap pertemuan memuat topik inti, short discussion, serta hands-on atau case exercise yang relevan.</p>
+        <div class="section-heading split-heading">
+          <div><span class="eyebrow">03 · Learn & practice</span><h2>Material library</h2></div>
+          <p>Search cepat berdasarkan topik, tools, atau teknologi. Setiap kartu punya ringkasan materi dan hands-on.</p>
+        </div>
+        <div class="material-toolbar">
+          <label class="search-box"><span>⌕</span><input id="materialSearch" type="search" placeholder="Cari: OWASP, XSS, Burp, Zero Trust, AI/ML..." /></label>
+          <span id="materialCount" class="result-count"></span>
         </div>
         <div class="materials-grid" id="materialsGrid"></div>
       </div>
     </section>
 
-    <section class="section section-alt" id="assessment">
+    <section class="section section-soft" id="assessment">
       <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow">Assessment</span>
-          <h2>Tugas, kuis, UTS, dan presentasi</h2>
-          <p>Asesmen formatif ditempatkan pada minggu yang ditetapkan di RPKPS. Detail rubrik tersedia pada setiap kartu.</p>
+        <div class="section-heading split-heading">
+          <div><span class="eyebrow">04 · Deadline zone</span><h2>Tugas, kuis & exam</h2></div>
+          <p>Semua graded moments ditampilkan seperti checkpoint. Bobot dan rubrik terlihat tanpa harus membuka RPKPS.</p>
         </div>
         <div class="assessment-grid" id="assessmentGrid"></div>
       </div>
     </section>
 
-    <section class="section" id="project">
+    <section class="section project-section" id="project">
       <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow">UAS Project</span>
-          <h2>Proyek integratif keamanan aplikasi web</h2>
-          <p>Proyek mengintegrasikan kontrol aplikasi, cloud security, Zero Trust, logging/big data, AI/ML, dan adaptive security plan.</p>
+        <div class="section-heading split-heading">
+          <div><span class="eyebrow">05 · Final boss</span><h2>UAS Project</h2></div>
+          <p>Capstone dari Week 11–16. Fokusnya bukan cuma fitur berjalan, tapi security controls, evidence, observability, dan adaptive plan.</p>
         </div>
+
+        <div class="project-hero">
+          <div class="project-copy">
+            <span class="project-tag">35% of final grade</span>
+            <h3>Secure. Test. Observe. Explain.</h3>
+            <p>Bangun atau rancang solusi keamanan aplikasi web yang menyatukan autentikasi, browser/transport security, Burp/ZAP, cloud architecture, Zero Trust, big data, AI/ML, dan continuous improvement.</p>
+          </div>
+          <div class="video-ticket">
+            <span class="ticket-label">🎥 VIDEO WAJIB</span>
+            <strong>10–15 min</strong>
+            <p>Penjelasan + live/demo evidence. Semua anggota kelompok wajib berkontribusi di video.</p>
+          </div>
+        </div>
+
         <div class="project-layout">
-          <div class="project-card">
-            <h3>Deliverables wajib</h3>
-            <ol id="deliverablesList"></ol>
-          </div>
-          <div class="project-card video-card">
-            <span class="badge badge-danger">WAJIB</span>
-            <h3>Video penjelasan & demo</h3>
-            <p>Durasi <strong>10–15 menit</strong>. Video harus memperlihatkan sistem/prototipe, kontrol keamanan yang diterapkan, evidence pengujian, serta hasil analisis.</p>
-            <p>Jika dikerjakan berkelompok, setiap anggota wajib tampil atau berbicara dan menjelaskan kontribusinya.</p>
-          </div>
+          <div class="project-card deliverable-card"><div class="card-title-row"><span>📦</span><h3>Deliverables</h3></div><ol id="deliverablesList"></ol></div>
+          <div class="project-card"><div class="card-title-row"><span>🧭</span><h3>Project timeline</h3></div><div class="project-phases" id="projectPhases"></div></div>
         </div>
-        <div class="project-phases" id="projectPhases"></div>
       </div>
     </section>
 
-    <section class="section section-alt" id="references">
+    <section class="section section-soft" id="references">
       <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow">References</span>
-          <h2>Referensi utama</h2>
+        <div class="section-heading split-heading">
+          <div><span class="eyebrow">06 · Keep learning</span><h2>Security references</h2></div>
+          <p>Referensi yang dipakai selama kelas dan cocok untuk lanjut eksplorasi mandiri.</p>
         </div>
         <div class="reference-grid" id="referenceGrid"></div>
       </div>
@@ -152,7 +181,7 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div><strong>TI215 · Keamanan Aplikasi Web</strong><span>Institut Teknologi Tangerang Selatan</span></div>
-      <div><span>Rabu · 09:45–12:00 WIB · Lab 2</span><span>Ganjil 2026/2027</span></div>
+      <div class="footer-right"><span>Rabu · 09:45–12:00 WIB · Lab 2</span><span>Ganjil 2026/2027</span></div>
     </div>
   </footer>
 </body>
